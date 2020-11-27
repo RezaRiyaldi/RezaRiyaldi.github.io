@@ -84,6 +84,66 @@ nav label.tutup{
     display: none;
 }
 
+.banner{
+    background-color: #353535;
+    height: 400px;
+    color: #ecf0f3;    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner img{
+    position: absolute;
+    width: 400px;
+    left: 20px;
+}
+.banner .banner-inner{
+    width: 70%;
+    margin: auto;
+    z-index: 10;
+}
+.banner .banner-inner h2{
+    font-size: 2rem;
+}
+.banner .banner-inner p{
+    font-size: 17px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+.banner .banner-inner .banner-button{
+    display: flex;
+    justify-content: center;
+}
+.banner-button .btn-1, .banner-button .btn-2{
+    padding: 8px 14px;
+    border-radius: 5px;
+    margin: 5px;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+}
+.banner-button .btn-1{
+    background-color: #ecf0f3;   
+    color: #353535; 
+}
+.banner-button .btn-2{
+    border: 1px solid #ecf0f3;  
+    color:#ecf0f3;  
+}
+.banner-button a{
+    text-decoration: none;
+    /* font-weight: 600; */
+}
+.banner-button .btn-1:hover{
+    border-radius: 25px;
+    background-color: rgb(192, 192, 192);
+}
+.banner-button .btn-2:hover{
+    border-radius: 25px;
+}
+
+
+
 @media (max-width: 800px){
     .menu ul{
         display: block;
@@ -91,11 +151,11 @@ nav label.tutup{
         top: 0;
         left: -100%;
         width: 100%;
-        max-width: 400px;
+        /* max-width: 400px; */
         padding-top: 45px;
         height: 100%;
         background-color: #ecf0f3;
-        box-shadow: 0 5px 10px #b0b0b5;
+        /* box-shadow: 0 5px 10px #b0b0b5; */
         z-index: 12;
         transition: all .5s ease;
     }
@@ -120,5 +180,8 @@ nav label.tutup{
     }
     #tombol:checked ~ ul{
         left: 0;
+    }
+    .banner img{
+        display: none;
     }
 }
