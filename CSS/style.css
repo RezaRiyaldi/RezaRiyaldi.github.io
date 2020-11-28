@@ -179,9 +179,6 @@ nav label.tutup{
     font-size: 25px;
     line-height: 60px;
 }
-.wrapper .icon:hover{
-    color: #fff;
-}
 .wrapper .icon .tooltip{
     background-color: #fff;
     color: #fff;
@@ -194,6 +191,9 @@ nav label.tutup{
     pointer-events: none;
     transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     /* display: none; */
+}
+.wrapper .icon:hover{
+    color: #fff;
 }
 .wrapper .icon:hover .tooltip{
     opacity: 1;
